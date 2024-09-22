@@ -2,10 +2,15 @@ body {
   padding: 20px;  
 }
 
+@font-face {
+    font-family: 'Almarena Mono';
+    src: url('');
+} 
+
 h1 {
     font-size: 220px;
     line-height: 100px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Almarena Mono","Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
