@@ -176,6 +176,7 @@ nav ul :hover {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
     grid-area: 
     "project1 project2"
     "project3 project4"
@@ -183,17 +184,56 @@ nav ul :hover {
 }
 
 .imgCard {
-    background-color: pink;
     border-radius: 10px;
-    text-align: left;
     padding: 0px;
+    background-color: pink;
 }
 
-.project1 {
-    background-image: url();
-    object-fit: fill;
-    width: 1fr;
+#project1 {
+    background-image: url(/images/sophia.jpg);
+    grid-area: project1;
+    border-radius: 10px;
+    object-fit: cover;
 }
+
+#project2 {
+    background-image: url(/images/capella.jpg);
+    object-fit: cover;
+    grid-area: project2;
+}
+
+#project3 {
+    background-image: url(/images/strayer.jpg);
+    object-fit: cover;
+    grid-area: project3;
+}
+
+#project4 {
+    background-image: url(/images/money-kite.jpg);
+    object-fit: cover;
+    grid-area: project4;
+}
+
+.experienceEducation {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.experience {
+    width: 50%;
+}
+
+.education {
+    width: 50%;
+}
+
+.toolsSkills {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 
 
 
