@@ -7,12 +7,22 @@
     src: url('https://github.com/jamiebetsybraith/Portfolio/blob/main/fonts/Almarena-Mono/Almarena-Mono-Display-Light.otf');
 } 
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 10,
+    'opsz' 24;
+    vertical-align: text-top;
+    margin-left: -4px;
+    margin-top: 1px;
+  }
+
 h1 {
     font-size: 220px;
     line-height: 90px;
     font-family: "Almarena Mono","Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-style: normal;
     color: black;
     font-size: 240px;
     text-transform: uppercase;
@@ -26,8 +36,10 @@ h2 {
     line-height: 44px;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: -20px;
 }
 
 h3 {
@@ -36,25 +48,53 @@ h3 {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
 }
 
-h6 {
+h4 {
     font-size: 24px;
-    line-height: 40px;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-p {
-    font-size: 20px;
     line-height: 34px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
+    margin-bottom: -10px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+.btnText {
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #E0FFFF;
+    border-radius: 30px;
+    border: 1px solid #14F1F1;
 }
 
 .underline {
@@ -96,6 +136,63 @@ nav ul :hover {
 
 .spacerS {
     height: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 
+    "card1 card2 card3"
+    "card4 card5 card6"
+    ;
+}
+
+.textCard {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    text-align: left;
+    padding: 30px;
+    padding-top: 0px;
+    justify-content: center;
+    width: 1fr;
+}
+
+.pinkBar {
+    width: 100px;
+    height: 10px;
+    background-color: #F114DB; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.iconImage img {
+    width: 80%;
+    padding: 0px 10%;
+    margin-bottom: -30px;
+}
+
+.gridWork {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 
+    "project1 project2"
+    "project3 project4"
+    ;
+}
+
+.imgCard {
+    background-color: pink;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+.project1 {
+    background-image: url();
+    object-fit: fill;
+    width: 1fr;
 }
 
 
