@@ -2,6 +2,10 @@
   padding: 20px;  
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Almarena Mono';
     src: url('https://github.com/jamiebetsybraith/Portfolio/blob/main/fonts/Almarena-Mono/Almarena-Mono-Display-Light.otf');
@@ -24,7 +28,6 @@ h1 {
     font-family: "Almarena Mono","Roboto Mono", monospace;
     font-optical-sizing: auto;
     color: black;
-    font-size: 240px;
     text-transform: uppercase;
     font-weight: 400;
     display: inline-block;
@@ -90,11 +93,28 @@ p {
     font-weight: 900;
 }
 
-button {
+a {
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+
+.primaryBtn {
     padding: 15px 30px;
     background-color: #E0FFFF;
     border-radius: 30px;
     border: 1px solid #14F1F1;
+    margin-right: 10px;
+}
+
+.secondaryBtn {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    margin-right: 10px;
 }
 
 .underline {
@@ -111,9 +131,14 @@ nav {
     padding-left: 20px;
 }
 
+nav img {
+    vertical-align: middle;
+}
+
 nav ul {
     margin: 0 auto;
     padding: 0px;
+    padding-top: 5px;
 }
 
 nav ul li {
@@ -176,7 +201,7 @@ nav ul :hover {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 350px 350px;
     grid-area: 
     "project1 project2"
     "project3 project4"
@@ -230,8 +255,184 @@ nav ul :hover {
 
 .toolsSkills {
     background-color: #f6f6f6;
-    padding: 20px;
+    padding: 10px 20px 40px 40px;
     border-radius: 10px;
+}
+
+.skillsList {
+    width: 23%;
+    display: inline-block;
+}
+
+.subHero {
+    width: 100%;
+}
+
+.subheroLeft {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.subheroRight {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: -920px;
+    height: 800px;
+    width: 50%;
+    z-index: -100;
+    gap: 30px;
+    /*background-color: yellow;*/
+}
+
+/* 8 pointed star */
+.shapeA {
+    display: flex;
+    grid-area: eight-pointed-star;
+    height: 100px;
+    width: 30%;
+    margin: 0 auto;
+    align-self: flex-start;
+    position: sticky;
+    top: 200px;
+    z-index: -100;
+}
+
+#eightVert {
+    height: 120px;
+    width: 120px;
+    background-color: #76EA0B;
+    transform: rotate(45deg);
+    animation-duration: 10s;
+    animation-name: rotateWait;
+    animation-iteration-count: infinite;
+}
+
+#eightHorz {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-color: #76EA0B;
+    animation-duration: 10s;
+    animation-name: rotateWait;
+    animation-iteration-count: infinite;
+}
+
+/* burst */
+.shapeB {
+    display: flex;
+    grid-area: burst;
+    height: 100px;
+    width: 30%;
+    animation-duration: 4.5s;
+    animation-name: skew2;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+    align-self: flex-end;
+    position: sticky;
+    top: 200px;
+    z-index: 1;
+}
+
+#burst1 {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-color: #EB00C5;
+    transform: skewX(20deg) rotate(0deg);
+}
+
+#burst2 {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-color: #EB00C5;
+    transform: skewX(20deg) rotate(22.5deg);
+}
+
+#burst3 {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-color: #EB00C5;
+    transform: skewX(20deg) rotate(45deg);
+}
+
+#burst4 {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-color: #EB00C5;
+    transform: skewX(20deg) rotate(67.5deg);
+}
+
+/* skew */
+.shapeC {
+    width: 30%;
+    height: 100px;
+    margin: 0 auto;
+    align-self: center;
+    position: sticky;
+    top: 200px;
+    z-index: 1;
+}
+
+.skew {
+    display: flex;
+    grid-area: skew;
+    height: 120px;
+    width: 120px;
+    background-color: #EA2100;
+    transform: skewX(210deg);
+    border-radius: 5px 15px 5px 15px;
+    animation-duration: 6s;
+    animation-name: skew1;
+    animation-iteration-count: infinite;
+}
+
+/* KEYFRAME ANIMATIONS */
+
+
+@keyframes rotateWait {
+    0% {
+        rotate: 0turn;
+    }
+
+    50% {
+        rotate: 1turn;
+    }
+
+    100% {
+        rotate: -1turn;
+    }
+}
+
+@keyframes skew1 {
+
+    0%,
+    50%,
+    100% {
+        transform: skew(25deg, 1deg);
+    }
+
+    25%,
+    75% {
+        transform: skew(-25deg, 20deg);
+    }
+}
+
+@keyframes skew2 {
+
+    0%,
+    50%,
+    100% {
+        transform: skew(-5deg, -10deg);
+    }
+
+    25%,
+    75% {
+        transform: skew(-10deg, -15deg);
+    }
 }
 
 
