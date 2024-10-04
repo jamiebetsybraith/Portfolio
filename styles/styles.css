@@ -93,11 +93,25 @@ p {
     font-weight: 900;
 }
 
+
 a {
     font-size: 20px;
     font-family: "Roboto Mono", monospace;
     font-weight: 900;
     color: black;
+    text-decoration: none;
+}
+
+.inline {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+    color: #F114DB;
+    text-decoration: underline;
+}
+
+a:hover {
+    color:#000000;
     text-decoration: none;
 }
 
@@ -109,12 +123,26 @@ a {
     margin-right: 10px;
 }
 
+.primaryBtn:hover {
+    background-color: #14F1F1;
+}
+
 .secondaryBtn {
     padding: 15px 30px;
     background-color: #ffffff;
     border-radius: 30px;
     border: 1px solid #000000;
     margin-right: 10px;
+}
+
+.secondaryBtn:hover {
+    background-color: #FFEAFD;
+}
+
+.fixedBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 .underline {
@@ -129,6 +157,8 @@ nav {
     margin-top: -10px;
     margin-left: -10px;
     padding-left: 20px;
+    z-index: 200;
+    box-shadow: 1px 2px 10px #e2e2e2;
 }
 
 nav img {
@@ -146,7 +176,7 @@ nav ul li {
     padding: 0px 20px;
 }
 
-nav ul :hover {
+nav ul li:hover {
     background-color: #00E6EB;
     cursor: pointer;
 }
@@ -246,11 +276,17 @@ nav ul :hover {
 }
 
 .experience {
-    width: 50%;
+    width: 43%;
+    border-left: 2px #00E6EB solid;
+    padding: 0px 2%;
+    margin: 40px 5%;
 }
 
 .education {
-    width: 50%;
+    width: 43%;
+    border-left: 2px #00E6EB solid;
+    padding: 0px 2%;
+    margin: 40px 5%;
 }
 
 .toolsSkills {
